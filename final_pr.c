@@ -348,7 +348,6 @@ timetable_t* load_file(timetable_t *list_head)
 	FILE *fp = NULL;
 	fp = fopen("test.txt","r+");
 	if(fp == NULL){
-		printf("파일을 여는데 실패하였습니다.\n");
 		return list_head;
 	}
 	while(!feof(fp))
